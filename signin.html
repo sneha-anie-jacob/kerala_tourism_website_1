@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kerala Tourism </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</head>
+<body background="Images/garden.jpg">
+
+    <!-- nav bar starts -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <img src="./Images/keralalogosmall.jpg" alt="logo">
+          <a class="navbar-brand" href="#">KERALA TOURISM</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="districts.html">DISTRICTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">LOGIN</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="signin.html">SIGN UP</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav bar ends -->
+    
+ <!-- form starts -->
+ <form  class="user" action="./index.html" onsubmit="return loginValidation();">
+
+ <div class="wrapper">
+    <div class="header-area">
+      <h2>Kerala Tourism</h2>
+      
+    </div>
+   
+    <div class="form-area">
+      <i class="fa fa-user"></i>
+      <input class="form-control roundborder" type="text" id="firstName" placeholder="Enter Username">
+      <i class="fa fa-envelope"></i>
+      <input class="form-control roundborder" type="email"  id="inputEmail" placeholder="Enter Email Address" oninput="emailValidate();">
+     
+      <label class="card" for="emailError" id="emailError"></label>
+     
+      <i class="fa fa-key"></i>
+      <input class="form-control roundborder" id="inputPassword" type="password" placeholder="Enter Password" oninput="passwordStrength();" >
+      <i class="fa fa-key"></i>
+      <input class="form-control roundborder" id="repeatPasswordInput" type="password" placeholder="Confirm Password" oninput="repeatpasswordCheck(); ">
+      <label class="card" hidden="true" for="passwordError" id="passwordError"></label>
+      <i class="fa fa-user"></i>
+      <input class="form-control roundborder" type="text" placeholder="Enter Address">
+      <i class="fa fa-phone"></i>
+      <input class="form-control roundborder" type="text"  id="phoneNumber" placeholder="Enter Phone Number" oninput="phoneValidate();">
+      <label class="card" hidden="true" for="phoneError" id="phoneError"></label>
+      
+      <input type="submit" value="Sign Up">
+      <a class="small" href="login.html"></a>
+    </div>
+ </div>
+</form> 
+ 
+  <!-- form ends -->
+
+
+<script src="form.js"></script>
+
+
+  <!-- <footer>
+    <h5>
+      copyright@2020
+    </h5>
+</footer> -->
+
+</body>
+</html>
